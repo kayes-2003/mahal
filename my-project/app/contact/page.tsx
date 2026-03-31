@@ -9,7 +9,7 @@ export default function Homepage() {
         className="absolute inset-0 w-full h-162 bg-cover bg-center z-0   bg-no-repeat brightness-70"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/1463987365/photo/service-of-plates-and-glasses-on-a-table-in-a-sophisticated-restaurant.jpg?s=612x612&w=0&k=20&c=xmFreCmev3pKwkeU3d3Dm4J_SZakkPcL_WnvcEda4C4=')",
+            "url('https://media.istockphoto.com/id/1288731897/photo/male-butcher-cut-raw-meat-with-sharp-knife-in-restaurants-kitchen.jpg?s=612x612&w=0&k=20&c=K2eWNyUng02E6k6FudBBm5AOWvZBZpqgo8qOqMmq4zw=')",
           filter: "brightness(0.6)",
         }}
         aria-hidden="true"
@@ -21,7 +21,7 @@ export default function Homepage() {
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-screen px-6 md:px-16 lg:px-24 text-center">
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl pt-20 font-norml leading-tight font-serif text-white">
-          About
+          Contacts
         </h1>
         
         <div className="flex justify-center md:justify-start gap-8 text-white text-center md:text-left pt-5">
@@ -54,106 +54,96 @@ export default function Homepage() {
   <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-center pt-10 gap-20">
 
     {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
+    <div className="relative w-full h-64 sm:h-80 md:h-[600px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
       <Image
-        src="/chef cooking.jpg"
-        alt="chef cooking"
+        src="/restaurant black color.jpg"
+        alt="restaurant black color"
         fill
-        className="rounded-lg object-cover"
+        className="object-cover"
       />
     </div>
 
+
     {/* Text (comes after image on mobile) */}
     <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 pt-20">
-        How Mahal <br /> came to be
+      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 ">
+        Make a <br /> reservation
       </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-20">
-           Mahal had an unconventional start as a restaurant. Originally opening as a pop-up event, our original aim was to showcase the unique culinary stylings of our head chef, Kabu Natsu. 
-          </p>
-    </div>
+        <form className="space-y-5 bg-white/5  rounded-lg">
 
-  </div>
-</section>
+            <div>
+              <label className="block mb-1 font-semibold text-black">
+                Name 
+              </label>
+              <input
+                type="text"
+                placeholder="Your name"
+                className="w-full px-4 py-4 rounded bg-gray-100 text-black"
+                required
+              />
+            </div>
 
+            <div>
+              <label className="block mb-1 font-semibold text-black">Last name</label>
+              <input
+                type="text"
+                placeholder="Your last name"
+                className="w-full px-4 py-4 rounded bg-gray-100 text-black"
+              />
+            </div>
 
+            <div>
+              <label className="block mb-1 font-semibold text-black">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="Your email"
+                className="w-full px-4 py-4 rounded bg-gray-100 text-black"
+                required
+              />
+            </div>
 
-
-<section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 pt-10 items-center">
-
-          {/* Image */}
-          <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2">
-            <Image
-              src="/rastauront interior table-02.jpg"
-              alt="rastauront interior table"
-             fill
-              className="rounded-lg object-cover"
-            />
-          </div>
-
-          {/* Text */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           When it became clear that there was going to be continued interest in the eating experience we’d curated, we found a permanent location, expanded our menu, and began regular service. That was 5 years ago, and we’re still going strong today.
-          </p>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           Though we’ve come a long way from where we started (we’re up to 12 chefs and 10 servers on a normal evening), our focus has ever shifted. When you eat with us, you can expect to find new flavors, existing foods, and a sparkling evening.
-          </p>
-    </div>
-        </div>
-</section>
-
-
-      
-
-
-            {/* Book a table  */}
-
-<section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-gray-100">
-  <div className="max-w-6xl mx-auto">
-
-
-    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
-      <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-        Book a table 
-      </h2>
-
-          <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-           Reserving a table beforehand means less waiting. <br /> Groups of 8 or more must reserve ahead of time.
-          </p>
-      
-    </div>
-
-    
-    
-
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
-     
-        <a href="/contact">
-          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
-            Book Now 
+            <div>
+              <label className="block mb-1 font-semibold text-black">
+                Message 
+              </label>
+              <textarea
+                rows={4}
+                placeholder="Enter your message"
+                className="w-full px-4 py-4 rounded bg-gray-100 text-black"
+                required
+              />
+            </div>
+        
+            <a href="/">
+          <button className="px-8 sm:px-8 md:px-12 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat]   ">
+            Submit
           </button>
         </a>
-      
+          </form>
     </div>
-    
-    
-  </div>
 
+  </div>
 </section>
 
- 
+<section className="w-full bg-gray-100 py-12 px-6">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-black">📍 Find Us</h2>
+    <div className="w-full h-[300px] md:h-[400px] overflow-hidden shadow-lg">
+      <iframe
+        title="Little Taco Shop Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.234567890123!2d90.259203!3d23.8506918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1a123456789%3A0xabcdef123456789!2sSavar%20New%20Market!5e0!3m2!1sen!2sbd!4v1671234567890!5m2!1sen!2sbd"
+        className="w-full h-full border-0"
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
 
-
-
-
-
-     
 
 
    </main>

@@ -46,59 +46,21 @@ export default function Homepage() {
             </div>
         </div>
         
-        <div className="w-full  py-10 buttom-0 text-center bg-green  text-2xl md:text-3xl font-serif justtify-between grid grid-cols-1 md:grid-cols-2">
-          <p>Order today and get 20% off delivery with Uber Eats.</p>
-          <a href="/blog">
-          <button className="px-4 sm:px-6 md:px-8  py-2 uppercase text-white border-2 border-white hover:bg-gray-700 hover:text-white transition text-[20px] font-serif">
-            Order Now
-          </button>
-        </a>
-      </div>
+        <div className="w-full py-10 bg-green-700 text-center text-2xl md:text-3xl font-serif flex flex-col md:flex-row items-center justify-between px-6">
+  <p className="md:pl-6">
+    Order today and get 20% off delivery with Uber Eats.
+  </p>
+  <a href="https://www.ubereats.com/">
+    <button className="px-4 sm:px-6 md:px-8 py-3 uppercase text-white border-2 border-white hover:bg-gray-700 transition text-[18px] md:text-[20px] font-serif">
+      Order Now
+    </button>
+  </a>
+</div>
 
 
 
 
-      <section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-        
-      
-      
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pt-10">
-
-    {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
-      <Image
-        src="/food-01.jpg"
-        alt="Foods"
-        fill
-        className="object-cover"
-      />
-    </div>
-
-    {/* Text (comes after image on mobile) */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-        Memories <br /> made in food
-      </h2>
-      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-        Our eclectic menu reflects the wide variety of influences and experiences that inform our approach to cooking. We don’t just serve dishes, we serve memories.         </p>
-
-      <div className="">
-
-      <a href="/blog">
-          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
-            Learn More
-          </button>
-        </a>
-      
-      </div>
-    
-    </div>
-
-  </div>
-</section>
-
-
-    {/* Popular dishes */}
+    {/* Starters  */}
 
 
 <section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-gray-100">
@@ -107,7 +69,7 @@ export default function Homepage() {
 
     <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
       <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-        Popular dishes
+        Starters 
       </h2>
 
       
@@ -117,11 +79,87 @@ export default function Homepage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
 {/* Items-01 */}
-      <div><a href="/How_I_got_into_marketing_and_why_I_love_it" className=" block group overflow-hidden relative">
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Dumplings.jpg"
+            alt="Dumplings"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Dumplings
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Choose from vegetable, chicken or pork filling. Served with dipping sauce and garnish.
+          </p>
+      </div>
+
+
+    {/* items-02 */}
+
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Chef's Special.jpg"
+            alt="Chef's Special"
+            fill
+            className="rounded-lg object-cover"
+          />
+          </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       Chef's Special
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $11
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Avocado, lime, salmon, mushrooms and garnish served with pickled ginger and spring onions.
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+          {/* Bowls  */}
+
+<section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+
+
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
+      <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
+        Bowls 
+      </h2>
+
+      
+    </div>
+
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+{/* Items-01 */}
+      <div>
         <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
           <Image
             src="/Vegetable Pho.jpg"
-            alt="Vegrtable Pho"
+            alt="Vegetable Pho"
             fill
             className="rounded-lg object-cover"
           />
@@ -133,24 +171,23 @@ export default function Homepage() {
         Vegetable Pho
       </h2>
       <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
-        $8
+        $7
       </h2>
     </div>
 
         <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-           Pho is based on a family recipe that's been handed down for generations. It's a spicy, light and aromatic noodle soup. 
+           Pho is a spicy, light and aromatic noodle soup served piping hot. 
           </p>
-          </a>
       </div>
 
 
     {/* items-02 */}
 
-      <div><a href="/The_10_ways_you_are_ruining_your_Content" className=" block group overflow-hidden relative">
+      <div>
         <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
           <Image
             src="/Tonkatsu Ramen.jpg"
-            alt="Tonkatsu Ramen"
+            alt="Tonkatsu Ramen "
             fill
             className="rounded-lg object-cover"
           />
@@ -158,137 +195,424 @@ export default function Homepage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
       <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
-       Tonkatsu Ramen
+       Tonkatsu Ramen 
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8
+      </h2>
+    </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Our bespoke ramen comes with handmade noodles, a wide array of toppings and homemade broth.
+          </p>
+      </div>
+
+    </div>
+
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+
+
+{/* Items-03 */}
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Vermicelli Donburi.jpg"
+            alt="Vermicelli Donburi"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Vermicelli Donburi
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $9
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Modern fusion dish combining rice noodles with a classic rice bowl. Vegetarian option available.
+          </p>
+      </div>
+
+
+    {/* items-04 */}
+
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Teriyaki Donburi.jpg"
+            alt="Teriyaki Donburi"
+            fill
+            className="rounded-lg object-cover"
+          />
+          </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       Teriyaki Donburi
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $10
+      </h2>
+    </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           A crown pleaser, our homemade teriyaki sauce served with chicken or tofu and greens. 
+          </p>
+      </div>
+
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+{/* Items-05 */}
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Grilled chicken rice.jpg"
+            alt="Grilled chicken rice"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Grilled chicken rice
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Choose from vegetable, chicken filling. Served with dipping sauce and garnish.
+          </p>
+      </div>
+
+
+    {/* items-06 */}
+
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/eel Donburi.jpg"
+            alt="eel Donburi"
+            fill
+            className="rounded-lg object-cover"
+          />
+          </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       Eel Donburi
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $10
+      </h2>
+    </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Avocado, lime, salmon, mushrooms and garnish served with pickled ginger and spring onions.
+          </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+          {/* Sushi  */}
+
+<section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-gray-100">
+  <div className="max-w-6xl mx-auto">
+
+
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
+      <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
+        Sushi
+      </h2>
+
+      
+    </div>
+
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+{/* Items-01 */}
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Philadelphia Roll.jpg"
+            alt="Philadelphia Roll"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Philadelphia Roll
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           A modern classic. Sushi roll with salmon, avocado, cream cheese, and surimi sticks. 
+          </p>
+      </div>
+
+
+    {/* items-02 */}
+
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/San Francisco Roll.jpg"
+            alt="San Francisco Roll"
+            fill
+            className="rounded-lg object-cover"
+          />
+          </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       San Francisco Roll 
       </h2>
       <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
         $7
       </h2>
     </div>
 
+
         <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-           Our bespoke ramen comes with handmade noodles, a wide array of toppings to choose from and homemade broth.
+          Inside out roll with surimi, tuna, cream cheese, sesame seeds and fried onions. 
           </p>
-          </a>
       </div>
 
     </div>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
-     
-        <a href="/blog">
-          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
-            See Menu
-          </button>
-        </a>
-      
-    </div>
-    
-    
-  </div>
-
-</section>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
 
 
+{/* Items-03 */}
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Dragon Roll.jpg"
+            alt="Dragon Roll"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
 
 
-{/* OTHER ANIMITY  */}
-
-
-<section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-     
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-center pt-10 gap-20">
-
-    {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
-      <Image
-        src="/baby-02.jpg"
-        alt="food_with_baby"
-        fill
-        className="rounded-lg object-cover"
-      />
-    </div>
-
-    {/* Text (comes after image on mobile) */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-        Great food for the whole family
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Dragon Roll 
       </h2>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-15">
-           Some of the best memories revolve around good food and family – that's why we welcome all of your loved ones, including children. We have dedicated family seating section towards the back of the restaurant.
-          </p>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $9
+      </h2>
     </div>
 
-  </div>
-</section>
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Inside out roll with fried king prawns, avocado, Japanese omelet and cream cheese.
+          </p>
+      </div>
 
 
+    {/* items-04 */}
 
-
-<section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 pt-10 items-center">
-
-          {/* Image */}
-          <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2">
-            <Image
-              src="/chef-02.jpg"
-              alt="Chef"
-             fill
-              className="rounded-lg object-cover"
-            />
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Nigiri Plate.jpg"
+            alt="Nigiri Plate"
+            fill
+            className="rounded-lg object-cover"
+          />
           </div>
 
-          {/* Text */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 md:pl-12">
-        We are here to lighten up your evening
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       Nigiri Plate
       </h2>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           All of our waiters have worked in our kitchen, meaning that they know the menu inside out and can help you, whether you need to check for allergens or need a hand for picking the right kind of wine.
-          </p>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $15
+      </h2>
     </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           A selection of our finest nigiri: choose from salmon, tuna, tilapia, surimi, prawns and vegetarian options.
+          </p>
+      </div>
+
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+{/* Items-05 */}
+      <div>
+        <div className="relative w-full h-64 sm:h-80 md:h-[400px]">
+          <Image
+            src="/Japanese grilled squid.jpg"
+            alt="Japanese grilled squid"
+            fill
+            className="rounded-lg object-cover"
+          />
         </div>
-</section>
 
 
-      
-
-
-
-<section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-        
-      
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center pt-10">
-
-    {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
-      <Image
-        src="/dog.jpg"
-        alt="pet"
-        fill
-        className="rounded-lg object-cover"
-      />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Japanese grilled squid
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8
+      </h2>
     </div>
 
-    {/* Text (comes after image on mobile) */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-       We welcome your animal friends
-      </h2>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-15">
-           Our restaurant is pet-friendly, meaning that you can bring your furry friends with you. We ask for calm and collected behavior from all of our animal customers.
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Choose from vegetable, chicken filling. Served with dipping sauce and garnish.
           </p>
+      </div>
+
+
+   
+
     </div>
 
   </div>
+
 </section>
 
 
 
 
+          {/* Drinks  */}
+
+<section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+
+
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
+      <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
+        Drinks
+      </h2>
+
+      
+    </div>
+
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+{/* Items-01 */}
+      <div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-5 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Sapporo Beer 
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $8.50
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Premium Japanese beer.
+          </p>
+      </div>
+
+
+    {/* items-02 */}
+
+      <div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-5 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+               Kokuryu Sake
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $7.35
+      </h2>
+    </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+          Daidinjo sake with a mild aroma and subtle floral notes. 
+          </p>
+      </div>
+
+    </div>
+    
+
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-30 pt-20">
+
+
+{/* Items-03 */}
+      <div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-5 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+        Tozai Sake
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $31.50
+      </h2>
+    </div>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+           Smooth, fruity, and cloudy sake, perfect for pairing.
+          </p>
+      </div>
+
+
+    {/* items-04 */}
+
+      <div>
+        
+
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-6 pb-5 items-center text-black justify-between">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif">
+       Juyodai Sake
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-3xl  font-serif md:text-right">
+        $35.50
+      </h2>
+    </div>
+
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
+              An easy-drinking premium sake with a rich flavor.          </p>
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+</section>
+
+
+
+
+        
 
 
             {/* Book a table  */}
@@ -313,7 +637,7 @@ export default function Homepage() {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
      
-        <a href="/blog">
+        <a href="/contact">
           <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
             Book Now 
           </button>
@@ -326,7 +650,18 @@ export default function Homepage() {
 
 </section>
 
-      
+     <div className="w-full py-10 bg-green-700 text-center text-2xl md:text-3xl font-serif flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+  <p className="md:pl-6">
+    Some dishes may contain nuts, dairy and other allergens.
+  </p>
+
+  <a href="/allergens">
+    <button className="px-4 sm:px-6 md:px-8 py-3 uppercase text-white border-2 border-white hover:bg-gray-700 transition text-[18px] md:text-[20px] font-serif">
+      Learn More
+    </button>
+  </a>
+</div>
+ 
 
 
 

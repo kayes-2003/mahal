@@ -9,7 +9,7 @@ export default function Homepage() {
         className="absolute inset-0 w-full h-162 bg-cover bg-center z-0   bg-no-repeat brightness-70"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/1463987365/photo/service-of-plates-and-glasses-on-a-table-in-a-sophisticated-restaurant.jpg?s=612x612&w=0&k=20&c=xmFreCmev3pKwkeU3d3Dm4J_SZakkPcL_WnvcEda4C4=')",
+            "url('https://media.istockphoto.com/id/1346447978/photo/close-up-on-a-woman-eating-salmon-for-dinner-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=nI6_zyQ3J74WdbQeNPHM_b9DYV3eH5f8PFDIyTZAK34=')",
           filter: "brightness(0.6)",
         }}
         aria-hidden="true"
@@ -21,7 +21,7 @@ export default function Homepage() {
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-screen px-6 md:px-16 lg:px-24 text-center">
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl pt-20 font-norml leading-tight font-serif text-white">
-          About
+          Customer reviews
         </h1>
         
         <div className="flex justify-center md:justify-start gap-8 text-white text-center md:text-left pt-5">
@@ -54,10 +54,10 @@ export default function Homepage() {
   <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-center pt-10 gap-20">
 
     {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
+    <div className="relative w-full h-64 sm:h-80 md:h-[600px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
       <Image
-        src="/chef cooking.jpg"
-        alt="chef cooking"
+        src="/Customer reviews.jpg"
+        alt="Customer reviews"
         fill
         className="rounded-lg object-cover"
       />
@@ -65,12 +65,25 @@ export default function Homepage() {
 
     {/* Text (comes after image on mobile) */}
     <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 pt-20">
-        How Mahal <br /> came to be
+      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 ">
+        How was your <br /> Mahal experience?
       </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-20">
-           Mahal had an unconventional start as a restaurant. Originally opening as a pop-up event, our original aim was to showcase the unique culinary stylings of our head chef, Kabu Natsu. 
+        <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-15 md:pr-20">
+          “We come to Ginza a lot for lunch during the work week, but have started meeting up here for sushi and drinks during the weekends, too. The service is great, the food is tasty and the atmosphere pleasant.“ 
+          <br /><br />
+           <span className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed pt-5">- Jennifer Fayer</span>
+          </p>
+        <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-15 md:pr-20">
+           “I first heard about Ginza on Uber Eats, and after ordering takeout a few times, we decided to try the dining in experience. Ginza lived up to its reputation and we thoroughly enjoyed our night.“ 
+            <br /><br />
+           <span className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed pt-5">- Henry Shipman</span>
+          </p>
+        <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-20">
+           “I've been going to Ginza for years now. I love the fresh and well-prepared food, the knowledgeable staff and reasonable prices. It's an all-around wonderful Asian fusion restaurant.“
+           <br /><br />
+           <span className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed pt-5">- Samantha Leslie</span>
+
           </p>
     </div>
 
@@ -79,34 +92,6 @@ export default function Homepage() {
 
 
 
-
-<section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 pt-10 items-center">
-
-          {/* Image */}
-          <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2">
-            <Image
-              src="/rastauront interior table-02.jpg"
-              alt="rastauront interior table"
-             fill
-              className="rounded-lg object-cover"
-            />
-          </div>
-
-          {/* Text */}
-    <div className="space-y-5 text-left order-2 lg:order-1">
-      
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           When it became clear that there was going to be continued interest in the eating experience we’d curated, we found a permanent location, expanded our menu, and began regular service. That was 5 years ago, and we’re still going strong today.
-          </p>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           Though we’ve come a long way from where we started (we’re up to 12 chefs and 10 servers on a normal evening), our focus has ever shifted. When you eat with us, you can expect to find new flavors, existing foods, and a sparkling evening.
-          </p>
-    </div>
-        </div>
-</section>
 
 
       
@@ -147,13 +132,6 @@ export default function Homepage() {
 
 </section>
 
- 
-
-
-
-
-
-     
 
 
    </main>

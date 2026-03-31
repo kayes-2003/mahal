@@ -74,8 +74,8 @@ export default function Homepage() {
 
       <div className="">
 
-      <a href="/blog">
-          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
+      <a href="/our_story">
+          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat]">
             Learn More
           </button>
         </a>
@@ -166,7 +166,7 @@ export default function Homepage() {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
      
-        <a href="/blog">
+        <a href="/menu">
           <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
             See Menu
           </button>
@@ -303,7 +303,7 @@ export default function Homepage() {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
      
-        <a href="/blog">
+        <a href="/contact">
           <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
             Book Now 
           </button>

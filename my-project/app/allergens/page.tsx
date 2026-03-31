@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Homepage() {
   return (
@@ -9,7 +8,7 @@ export default function Homepage() {
         className="absolute inset-0 w-full h-162 bg-cover bg-center z-0   bg-no-repeat brightness-70"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/1463987365/photo/service-of-plates-and-glasses-on-a-table-in-a-sophisticated-restaurant.jpg?s=612x612&w=0&k=20&c=xmFreCmev3pKwkeU3d3Dm4J_SZakkPcL_WnvcEda4C4=')",
+            "url('https://media.istockphoto.com/id/2266033838/photo/close-up-of-womans-hands-cutting-raisins-and-nuts.jpg?s=612x612&w=0&k=20&c=HNq5V8s0-tJ5W8kv9yi5MqaqEgUFtqYzMoys4z415Ws=')",
           filter: "brightness(0.6)",
         }}
         aria-hidden="true"
@@ -21,7 +20,7 @@ export default function Homepage() {
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-screen px-6 md:px-16 lg:px-24 text-center">
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl pt-20 font-norml leading-tight font-serif text-white">
-          About
+          List of allergens
         </h1>
         
         <div className="flex justify-center md:justify-start gap-8 text-white text-center md:text-left pt-5">
@@ -47,30 +46,35 @@ export default function Homepage() {
         </div>
         
         
-
-
 <section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
      
   <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-center pt-10 gap-20">
 
-    {/* Image (comes first on mobile) */}
-    <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2 order-1 lg:order-2">
-      <Image
-        src="/chef cooking.jpg"
-        alt="chef cooking"
-        fill
-        className="rounded-lg object-cover"
-      />
+    <div className="space-y-5 text-left order-2 lg:order-1">
+      <h2 className=" text-left items-center text-2xl md:text-3xl font-serif text-black pb-10 md:pl-2">
+        
+        Allergens
+      </h2>
+
+        <p className="text-gray-600 font-serif text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-2">
+           All our our food is freshly made and created daily in our on-site kitchens, meaning that we often deal with and come to contact with various allergens. We do our utmost best to ensure that no cross-contamination happens, but we cannot unfortunately fully minimize the risk that our chefs don't come into contact with any allergens at any given time. <br /><br />
+
+We cannot guarantee that all of our dishes are 100% allergen-free or completely suitable to people with allergies or intolerances. If you have an allergy or an intolerance, please inform our team upon arrival to the restaurant so they can help you choose the most suitable dishes. <br /><br />
+
+As our recipes do change from time to time, please take the time to familiarize yourself with our menu.
+          </p>
     </div>
 
     {/* Text (comes after image on mobile) */}
     <div className="space-y-5 text-left order-2 lg:order-1">
-      <h2 className=" text-left items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10 pt-20">
-        How Mahal <br /> came to be
+      <h2 className=" text-left items-center text-2xl md:text-3xl font-serif text-black pb-10">
+        Gluten and dairy
       </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-20">
-           Mahal had an unconventional start as a restaurant. Originally opening as a pop-up event, our original aim was to showcase the unique culinary stylings of our head chef, Kabu Natsu. 
+        <p className="text-gray-600 font-serif text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-2 md:pb-50">
+           We use gluten and dairy products in our kitchen and in our dishes extensively, meaning that cross-contamination cannot be avoided. While we are able to substitute certain ingredients in our dishes, please always check with our staff prior making an order. <br /> <br />
+
+For online orders, we highly recommend specifying in the comment section regarding any allergies or intolerances during the checkout process.
           </p>
     </div>
 
@@ -83,26 +87,15 @@ export default function Homepage() {
 <section className="py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 pt-10 items-center">
 
-          {/* Image */}
-          <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2">
-            <Image
-              src="/rastauront interior table-02.jpg"
-              alt="rastauront interior table"
-             fill
-              className="rounded-lg object-cover"
-            />
-          </div>
+          
 
-          {/* Text */}
     <div className="space-y-5 text-left order-2 lg:order-1">
-      
+      <h2 className=" text-left items-center text-2xl md:text-3xl font-serif text-black pb-10 md:pl-2">
+        Nuts
+      </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           When it became clear that there was going to be continued interest in the eating experience we’d curated, we found a permanent location, expanded our menu, and began regular service. That was 5 years ago, and we’re still going strong today.
-          </p>
-
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-15">
-           Though we’ve come a long way from where we started (we’re up to 12 chefs and 10 servers on a normal evening), our focus has ever shifted. When you eat with us, you can expect to find new flavors, existing foods, and a sparkling evening.
+        <p className="text-gray-600 font-serif text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-2">
+           Our restaurant handles various seeds and nuts in our kitchen and in our dishes. For anyone highly allergic to nuts we wouldn't recommend dining at Ginza, as we cannot be held responsible for any adverse allergic reactions. 
           </p>
     </div>
         </div>
@@ -111,49 +104,6 @@ export default function Homepage() {
 
       
 
-
-            {/* Book a table  */}
-
-<section className= "relative py-12 sm:py-16 px-4 sm:px-6 bg-gray-100">
-  <div className="max-w-6xl mx-auto">
-
-
-    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
-      <h2 className=" text-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-black pb-10">
-        Book a table 
-      </h2>
-
-          <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-           Reserving a table beforehand means less waiting. <br /> Groups of 8 or more must reserve ahead of time.
-          </p>
-      
-    </div>
-
-    
-    
-
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 pb-10 relative z-20 flex-col items-center justify-center text-center">
-     
-        <a href="/contact">
-          <button className="px-8 sm:px-8 md:px-12 mt-6 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat] mr-4 ml-6">
-            Book Now 
-          </button>
-        </a>
-      
-    </div>
-    
-    
-  </div>
-
-</section>
-
- 
-
-
-
-
-
-     
 
 
    </main>
