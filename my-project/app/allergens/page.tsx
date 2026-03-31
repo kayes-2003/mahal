@@ -57,7 +57,7 @@ export default function Homepage() {
       </h2>
 
         <p className="text-gray-600 font-serif text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-2">
-           All our our food is freshly made and created daily in our on-site kitchens, meaning that we often deal with and come to contact with various allergens. We do our utmost best to ensure that no cross-contamination happens, but we cannot unfortunately fully minimize the risk that our chefs don't come into contact with any allergens at any given time. <br /><br />
+           All our our food is freshly made and created daily in our on-site kitchens, meaning that we often deal with and come to contact with various allergens. We do our utmost best to ensure that no cross-contamination happens, but we cannot unfortunately fully minimize the risk that our chefs don’t come into contact with any allergens at any given time. <br /><br />
 
 We cannot guarantee that all of our dishes are 100% allergen-free or completely suitable to people with allergies or intolerances. If you have an allergy or an intolerance, please inform our team upon arrival to the restaurant so they can help you choose the most suitable dishes. <br /><br />
 
@@ -95,7 +95,7 @@ For online orders, we highly recommend specifying in the comment section regardi
       </h2>
 
         <p className="text-gray-600 font-serif text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pl-2">
-           Our restaurant handles various seeds and nuts in our kitchen and in our dishes. For anyone highly allergic to nuts we wouldn't recommend dining at Ginza, as we cannot be held responsible for any adverse allergic reactions. 
+           Our restaurant handles various seeds and nuts in our kitchen and in our dishes. For anyone highly allergic to nuts we wouldn’t recommend dining at Ginza, as we cannot be held responsible for any adverse allergic reactions. 
           </p>
     </div>
         </div>

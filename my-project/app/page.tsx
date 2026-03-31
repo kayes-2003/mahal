@@ -128,7 +128,7 @@ export default function Homepage() {
     </div>
 
         <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-10">
-           Pho is based on a family recipe that's been handed down for generations. It's a spicy, light and aromatic noodle soup. 
+           Pho is based on a family recipe that’s been handed down for generations. It’s a spicy, light and aromatic noodle soup. 
           </p>
           </a>
       </div>
@@ -206,7 +206,7 @@ export default function Homepage() {
       </h2>
 
         <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-3 md:mb-4 md:pr-15">
-           Some of the best memories revolve around good food and family – that's why we welcome all of your loved ones, including children. We have dedicated family seating section towards the back of the restaurant.
+           Some of the best memories revolve around good food and family – that’s why we welcome all of your loved ones, including children. We have dedicated family seating section towards the back of the restaurant.
           </p>
     </div>
 

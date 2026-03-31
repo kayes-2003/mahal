@@ -117,7 +117,7 @@ export default function Homepage() {
               />
             </div>
         
-            <a href="/">
+            <a href="">
           <button className="px-8 sm:px-8 md:px-12 sm:mt-10 py-3 uppercase text-[#600d0e] border-2 border-[#600d0e] hover:bg-gray-700 hover:text-white transition font-semibold font-[Montserrat]   ">
             Submit
           </button>
