@@ -222,7 +222,7 @@ export default function Homepage() {
           {/* Image */}
           <div className="relative w-full h-64 sm:h-80 md:h-[400px] grid grid-cols-1 md:grid-cols-2">
             <Image
-              src="/chef-02.jpg"
+              src="/Chef-02.jpg"
               alt="Chef"
              fill
               className="rounded-lg object-cover"
