@@ -46,7 +46,7 @@ export default function Homepage() {
             </div>
         </div>
         
-        <div className="w-full py-10 pt-10 bg-green-700 text-center text-2xl md:text-3xl font-serif flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+        <div className="relative w-full py-10 pt-10 bg-green-700 text-center text-2xl md:text-3xl font-serif flex flex-col md:flex-row items-center justify-between gap-6 px-6">
   <p className="md:pl-6">
     Order today and get 20% off delivery with Uber Eats.
   </p>
